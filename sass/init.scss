@@ -1,6 +1,6 @@
 // 003a70
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Ubuntu&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Teachers&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
 
 // $colorred: #560418;
 // $colorred: #7b2031; //jurno
@@ -128,8 +128,10 @@ section {
     li {
         font-size: 1.3rem;
         color: #fff;
+        line-height: 1.6rem;
         @media screen and (max-width: 768px) {
             font-size: 1.2rem;
+            line-height: 1.5rem;
         }
         @media screen and (max-width: 400px) {
             font-size: 1rem;
@@ -244,7 +246,7 @@ body {
     // p {
     //     color: #3a6a4d;
     // }
-    font-family: "Rubik" !important;
+    font-family: "Teachers" !important;
     @media screen and (max-width: 768px) {
         // overflow-x: hidden;
     }
@@ -415,7 +417,7 @@ section {
                 bottom: 0;
                 transform: initial;
                 h2 {
-                    font-family: "Rubik" !important;
+                    font-family: "Teachers" !important;
                     font-size: 1.2rem;
                 }
             }
