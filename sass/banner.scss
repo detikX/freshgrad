@@ -12,12 +12,13 @@
     }
 
     .wrappers {
-        width: 100%;
+        width: fit-content;
         height: 100vh;
+        margin: 0 auto;
         position: relative;
         // border: 2px solid;
         @media screen and (max-width: 768px) {
-            height: 65vh;
+            height: 50vh;
             top: 20vh;
         }
         .image {
