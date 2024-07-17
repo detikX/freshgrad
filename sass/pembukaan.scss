@@ -1,8 +1,21 @@
 .pembukaan {
     background: #1c7b9d;
+    .bayangan {
+        position: absolute;
+        right: -8%;
+        bottom: -16%;
+        width: 50%;
+        height: auto;
+        filter: grayscale(1) opacity(0.2);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     .bawah {
         position: absolute;
-        bottom: 0;
+        bottom: -16%;
         left: 0;
         width: 50%;
         z-index: 4;

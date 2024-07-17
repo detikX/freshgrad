@@ -1,0 +1,12 @@
+.teropong {
+    background: #1c7b9d;
+    .image {
+        width: fit-content;
+        height: 360px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
