@@ -1,5 +1,6 @@
 .pembukaan {
     background: #1c7b9d;
+    // padding: 32px 0 50vh;
     .bayangan {
         position: absolute;
         right: -8%;
@@ -15,11 +16,21 @@
     }
     .bawah {
         position: absolute;
-        bottom: -16%;
+        bottom: 0%;
         left: 0;
         width: 50%;
         z-index: 4;
         height: auto;
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     width: 100%;
+        //     height: 50px;
+        //     background: linear-gradient(to top, #1c7b9d, transparent);
+        // }
         @media screen and (max-width: 768px) {
             width: 100%;
             bottom: -5%;
@@ -53,6 +64,7 @@
 
     .wrap-detikx {
         margin-top: -100vh;
+        padding-bottom: 20vh;
         .hello {
             z-index: -1;
         }
