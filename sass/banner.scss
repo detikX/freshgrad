@@ -10,13 +10,22 @@
             left: 65%;
         }
     }
-    @keyframes MoveUpDown2 {
+    @keyframes MoveUpDown21 {
         0%,
         100% {
             left: 10%;
         }
         50% {
             left: 15%;
+        }
+    }
+    @keyframes MoveUpDown2 {
+        0%,
+        100% {
+            left: 0%;
+        }
+        50% {
+            left: 5%;
         }
     }
     .pesan {
@@ -41,7 +50,12 @@
         width: fit-content;
         transform: translate(100%, -100%) rotate(180deg);
         height: 70px;
-        animation: MoveUpDown2 2.5s linear infinite;
+        animation: MoveUpDown21 3.5s linear infinite;
+        @media screen and (max-width: 768px) {
+            animation: MoveUpDown2 2.5s linear infinite;
+            transform: translate(-50%, -100%) rotate(180deg);
+            height: 50px;
+        }
         img {
             width: 100%;
             height: 100%;
