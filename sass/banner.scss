@@ -10,6 +10,15 @@
             left: 65%;
         }
     }
+    @keyframes MoveUpDown2 {
+        0%,
+        100% {
+            left: 10%;
+        }
+        50% {
+            left: 15%;
+        }
+    }
     .pesan {
         position: absolute;
         top: 40%;
@@ -17,7 +26,22 @@
         width: fit-content;
         transform: translate(100%, -100%);
         height: 70px;
-        animation: MoveUpDown 3s linear infinite;
+        animation: MoveUpDown 2s linear infinite;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .pesan2 {
+        position: absolute;
+        top: 60%;
+        left: 10%;
+
+        width: fit-content;
+        transform: translate(100%, -100%) rotate(180deg);
+        height: 70px;
+        animation: MoveUpDown2 2.5s linear infinite;
         img {
             width: 100%;
             height: 100%;
