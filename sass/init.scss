@@ -1,6 +1,6 @@
 // 003a70
 
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&family=Teachers:wght@400;900&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zain:wght@400;900&family=Teachers:wght@400;900&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
 
 // $colorred: #560418;
 // $colorred: #7b2031; //jurno
@@ -126,15 +126,15 @@ section {
     }
     p,
     li {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         color: #fff;
-        line-height: normal;
+        line-height: 1.8rem;
         @media screen and (max-width: 768px) {
             font-size: 1.4rem;
-            line-height: normal;
+            line-height: 1.7rem;
         }
         @media screen and (max-width: 400px) {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
     }
     // @media screen and (min-width:1600px) {
@@ -246,7 +246,7 @@ body {
     // p {
     //     color: #3a6a4d;
     // }
-    font-family: "Teachers" !important;
+    font-family: "Zain" !important;
     @media screen and (max-width: 768px) {
         // overflow-x: hidden;
     }
@@ -417,7 +417,7 @@ section {
                 bottom: 0;
                 transform: initial;
                 h2 {
-                    font-family: "Teachers" !important;
+                    font-family: "Zain" !important;
                     font-size: 1.2rem;
                 }
             }
