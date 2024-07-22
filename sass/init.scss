@@ -128,10 +128,10 @@ section {
     li {
         font-size: 1.3rem;
         color: #fff;
-        line-height: 1.6rem;
+        line-height: normal;
         @media screen and (max-width: 768px) {
             font-size: 1.4rem;
-            line-height: 1.6rem;
+            line-height: 2rem;
         }
         @media screen and (max-width: 400px) {
             font-size: 1.2rem;
