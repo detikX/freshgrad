@@ -7,16 +7,16 @@
 
     .videox {
         position: absolute;
-        left: 50%;
-        z-index: 3;
-        top: 35%;
+        left: 63%;
+        z-index: 4;
+        top: 40%;
         outline: none;
-
-        width: 30vw;
+        width: 20vw;
         height: auto;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) rotate(6deg);
         @media screen and (max-width: 768px) {
-            width: 90%;
+            width: 60%;
+            left: 76%;
         }
     }
     @keyframes MoveUpDown {
@@ -123,7 +123,7 @@
     }
     .pesan {
         position: absolute;
-        top: 40%;
+        top: 85%;
         left: 60%;
         z-index: 6;
         filter: drop-shadow(2px 2px 6px #888);
@@ -131,6 +131,9 @@
         transform: translate(100%, -100%);
         height: 70px;
         animation: MoveUpDown 2s linear infinite;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
         img {
             width: 100%;
             height: 100%;
@@ -161,31 +164,34 @@
     }
     .title {
         position: absolute;
-        text-align: center;
-        left: 50%;
-        top: 73%;
+        text-align: left;
+        left: 61%;
+        top: 60%;
         transform: translate(-50%, -50%);
-        width: 35%;
+        width: 20%;
         z-index: 8;
         padding: 8px;
         border-radius: 8px 8px 0 0;
-        background: rgba(#f44336, 0.9);
-        // backdrop-filter: ;
+
         h2 {
             font-weight: bold;
-            font-family: "Teachers" !important;
-            color: white;
-            font-size: 3rem;
+            font-family: "Zain" !important;
+            color: #535e78;
+            font-size: 4rem;
             line-height: 3rem;
             @media screen and (max-width: 768px) {
-                font-size: 2.2rem;
-                line-height: 2.2rem;
+                font-size: 2.5rem;
+                line-height: 2.5rem;
             }
         }
         @media screen and (max-width: 768px) {
-            top: 73%;
-            width: 90%;
+            // top: 73%;
+            // width: 90%;
+            // background: transparent;
+            left: 75%;
+            width: 40%;
             background: transparent;
+            top: 50%;
             // background: #1c7b9d;
             // padding: 0;
         }
