@@ -2,7 +2,7 @@
     background: linear-gradient(to top, #1c7b9d, #fafafa);
     padding: 0;
     @media screen and (max-width: 768px) {
-        background: linear-gradient(to top, #1c7b9d, #fafafa);
+        background: linear-gradient(to top, #1c7b9d 30%, #fafafa);
     }
 
     .videox {
@@ -213,6 +213,18 @@
             position: relative;
             z-index: 5;
             top: 10%;
+            &::after {
+                @media screen and (max-width: 768px) {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    bottom: 0;
+                    height: 50px;
+                    background: linear-gradient(to top, #1c7b9d, transparent);
+                }
+            }
             @media screen and (max-width: 768px) {
                 // height: 90%;
             }
