@@ -1,8 +1,8 @@
 .banner {
-    background: linear-gradient(to top, #1c7b9d 30%, #fafafa 65%);
+    background: linear-gradient(to top, #1c7b9d, #fafafa);
     padding: 0;
     @media screen and (max-width: 768px) {
-        background: linear-gradient(to top, #1c7b9d 34%, #fafafa 60%);
+        background: linear-gradient(to top, #1c7b9d, #fafafa);
     }
 
     .videox {
@@ -165,7 +165,7 @@
     .title {
         position: absolute;
         text-align: left;
-        left: 61%;
+        left: 60%;
         top: 60%;
         transform: translate(-50%, -50%);
         width: 20%;
@@ -177,8 +177,8 @@
             font-weight: bold;
             font-family: "Zain" !important;
             color: #535e78;
-            font-size: 4rem;
-            line-height: 3rem;
+            font-size: 4.5rem;
+            line-height: 3.5rem;
             @media screen and (max-width: 768px) {
                 font-size: 2.4rem;
                 line-height: 2rem;
