@@ -1,6 +1,6 @@
 // 003a70
 
-@import url("https://fonts.googleapis.com/css2?family=Zain:wght@400;900&family=Teachers:wght@400;900&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zain:wght@300;400;900&family=Teachers:wght@400;900&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
 
 // $colorred: #560418;
 // $colorred: #7b2031; //jurno
@@ -128,6 +128,7 @@ section {
     li {
         font-size: 1.8rem;
         color: #eaeaea;
+        font-weight: 300;
         line-height: 1.9rem;
         @media screen and (max-width: 768px) {
             font-size: 1.5rem;
