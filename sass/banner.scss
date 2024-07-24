@@ -1,15 +1,77 @@
+:root {
+    --color: rgba(122, 122, 124, 0.918);
+}
 .banner {
     background: linear-gradient(to top, #1c7b9d, #fafafa);
     padding: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../img/kotak.png");
+        background-repeat: repeat;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #1c7b9d, rgba(#1c7b9d, 0.9), #1c7b9d);
+    }
     @media screen and (max-width: 768px) {
         background: linear-gradient(to top, #1c7b9d 30%, #fafafa);
+    }
+
+    .container_mouse {
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 12;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 2rem;
+        cursor: pointer;
+    }
+
+    .container_mouse .mouse-btn {
+        margin: 10px auto;
+        width: 40px;
+        height: 80px;
+        border: 4px solid white;
+        border-radius: 30px;
+        display: flex;
+    }
+
+    .container_mouse .mouse-btn .mouse-scroll {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(170deg, rgba(white, 1), rgb(black, 0.1));
+        border-radius: 50%;
+        margin: auto;
+        animation: scrolling 1s linear infinite;
+    }
+
+    @keyframes scrolling {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(20px);
+        }
     }
 
     .videox {
         position: absolute;
         left: 63%;
         z-index: 4;
-        top: 40%;
+        top: 30%;
         outline: none;
         width: 20vw;
         height: auto;
@@ -166,7 +228,7 @@
         position: absolute;
         text-align: left;
         left: 60%;
-        top: 60%;
+        top: 50%;
         transform: translate(-50%, -50%);
         width: 20%;
         z-index: 8;
@@ -212,21 +274,18 @@
             height: 100%;
             position: relative;
             z-index: 5;
-            top: 10%;
+            top: 0%;
             &::after {
-                @media screen and (max-width: 768px) {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    width: 100%;
-                    bottom: 0;
-                    height: 50px;
-                    background: linear-gradient(to top, #1c7b9d, transparent);
-                }
-            }
-            @media screen and (max-width: 768px) {
-                // height: 90%;
+                // @media screen and (max-width: 768px) {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                bottom: 0;
+                height: 50px;
+                background: linear-gradient(to top, #1c7b9d, transparent);
+                // }
             }
             img {
                 width: 100%;
@@ -235,6 +294,10 @@
                 @media screen and (max-width: 768px) {
                     object-fit: cover;
                 }
+            }
+            @media screen and (max-width: 768px) {
+                // height: 90%;
+                top: 10%;
             }
         }
         .tangan {
