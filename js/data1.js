@@ -1,3 +1,8 @@
+Highcharts.setOptions({
+    lang: {
+        thousandsSep: '.'
+    }
+})
 Highcharts.chart('container', {
     chart: {
         type: 'bar',
@@ -34,7 +39,7 @@ Highcharts.chart('container', {
             // text: null,
             style: {
                 // color: "#fafafa",
-                font: '1rem "Zain", sans-serif',
+                font: '18px "Zain", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
@@ -61,11 +66,21 @@ Highcharts.chart('container', {
         valueSuffix: ' millions'
     },
     plotOptions: {
+        // series: {
+        //     stacking: 'normal',
+        // },
         bar: {
             borderRadius: '50%',
             borderColor: 'transparent',
             dataLabels: {
-                enabled: true
+                enabled: true,
+                style: {
+                    // color: "#fafafa",
+                    font: 'normal 18px "Zain", sans-serif',
+                    // lineHeight: '2rem'
+                    fontWeight: 'normal',
+                    textOutline: false
+                },
             },
             groupPadding: 0.1
         }
