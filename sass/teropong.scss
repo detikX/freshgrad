@@ -92,4 +92,19 @@
             object-fit: contain;
         }
     }
+
+    .choosen {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            height: 40px;
+            right: 0;
+            z-index: -1;
+            background: rgba(#fafafa, 0.1);
+            border-radius: 50%;
+        }
+    }
 }
