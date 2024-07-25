@@ -1,33 +1,58 @@
 Highcharts.chart('container', {
     chart: {
-        type: 'bar'
+        type: 'bar',
+        backgroundColor: 'rgba(255,255,255,.7)',
+        borderRadius: 16,
     },
     title: {
         text: 'Historic World Population by Region',
-        align: 'left'
+        align: 'left',
+        style: {
+            // color: "#fafafa",
+            font: 'bold 2rem "Zain", sans-serif',
+            // lineHeight: '2rem'
+        }
     },
     subtitle: {
         text: 'Source: <a ' +
             'href="https://en.wikipedia.org/wiki/List_of_continents_and_continental_subregions_by_population"' +
             'target="_blank">Wikipedia.org</a>',
-        align: 'left'
+        align: 'left',
+        style: {
+            // color: "#fafafa",
+            font: 'normal 13px "Source Code Pro", sans-serif',
+            // lineHeight: '2rem'
+        }
     },
     xAxis: {
         categories: ['Africa', 'America', 'Asia', 'Europe'],
         title: {
             text: null
         },
+        labels: {
+            // text: null,
+            style: {
+                // color: "#fafafa",
+                font: '1rem "Zain", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+        },
         gridLineWidth: 1,
         lineWidth: 0
     },
     yAxis: {
         min: 0,
-        title: {
-            text: 'Population (millions)',
-            align: 'high'
-        },
+        // title: {
+        //     text: 'Population (millions)',
+        //     align: 'high'
+        // },
         labels: {
-            overflow: 'justify'
+            overflow: 'justify',
+            enabled: false
+        },
+        title: {
+            text: null
         },
         gridLineWidth: 0
     },
@@ -37,6 +62,7 @@ Highcharts.chart('container', {
     plotOptions: {
         bar: {
             borderRadius: '50%',
+            borderColor: 'transparent',
             dataLabels: {
                 enabled: true
             },
