@@ -1,7 +1,7 @@
 Highcharts.chart('container', {
     chart: {
         type: 'bar',
-        backgroundColor: 'rgba(255,255,255,.7)',
+        backgroundColor: 'rgba(255,255,255,.9)',
         borderRadius: 16,
     },
     title: {
@@ -9,7 +9,8 @@ Highcharts.chart('container', {
         align: 'left',
         style: {
             // color: "#fafafa",
-            font: 'bold 2rem "Zain", sans-serif',
+            font: 'bold 24px "Zain", sans-serif',
+
             // lineHeight: '2rem'
         }
     },
