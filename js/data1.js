@@ -10,19 +10,17 @@ Highcharts.chart('container', {
         borderRadius: 16,
     },
     title: {
-        text: 'Historic World Population by Region',
+        text: null,
         align: 'left',
         style: {
             // color: "#fafafa",
-            font: 'bold 24px "Zain", sans-serif',
+            font: 'bold 2rem "Zain", sans-serif',
 
-            // lineHeight: '2rem'
+            lineHeight: '4rem'
         }
     },
     subtitle: {
-        text: 'Source: <a ' +
-            'href="https://en.wikipedia.org/wiki/List_of_continents_and_continental_subregions_by_population"' +
-            'target="_blank">Wikipedia.org</a>',
+        text: 'Sumber: Sakernas Februari 2024',
         align: 'left',
         style: {
             // color: "#fafafa",
@@ -98,11 +96,11 @@ Highcharts.chart('container', {
         shadow: true
     },
     credits: {
-        enabled: false
+        enabled: false //buat highcharts com
     },
     series: [{
         name: 'Year 1990',
-        data: [632, 727, 3202, 721]
+        data: [1034119]
     }, {
         name: 'Year 2000',
         data: [814, 841, 3714, 726]
