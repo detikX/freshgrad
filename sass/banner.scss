@@ -4,6 +4,32 @@
 .banner {
     background: linear-gradient(to top, #1c7b9d, #fafafa);
     padding: 0;
+
+    .titlex {
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%,-50%);
+        z-index: 12;
+        width: 50%;
+        @media screen and (max-width:768px) {
+            width: 90%;
+            top: 30%;
+        }
+        text-align: center;
+        h2 {
+            font-family: 'Zain' !important;
+            font-size: 4rem;
+            font-weight: bold;
+            color: white;
+            line-height: 3.5rem;
+            @media screen and (max-width:768px) {
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+                margin-bottom: 0;
+            }
+        }
+    }
     &::before {
         content: "";
         position: absolute;
