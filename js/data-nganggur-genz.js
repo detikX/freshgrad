@@ -64,7 +64,12 @@ Highcharts.chart('container-genz', {
         text: null
     },
     tooltip: {
-        pointFormat: '{series.name}: <b>{point.y}</b>'
+        pointFormat: '{series.name}: <b>{point.y}</b>',
+        style: {
+            //fontWeight: 'bold',
+            fontFamily: 'Zain',
+            fontSize: '1.2rem'
+        }
     },
     legend: {
         enabled: false
