@@ -14,20 +14,20 @@ Highcharts.chart('container-genz', {
                 const chart = this,
                     series = chart.series[0];
                 let customLabel = chart.options.chart.custom.label;
-                
+
                 points = chart.series[0].points,
-                len = points.length,
-                total = 0,
-                i = 0;
-    
-              for (; i < len; i++) {
-                total += points[i].y;
-              }
+                    len = points.length,
+                    total = 0,
+                    i = 0;
+
+                for (; i < len; i++) {
+                    total += points[i].y;
+                }
                 if (!customLabel) {
                     customLabel = chart.options.chart.custom.label =
                         chart.renderer.label(
                             'Total<br/>' +
-                            '<strong>'+total.toLocaleString('id')+'</strong>'
+                            '<strong>' + total.toLocaleString('id') + '</strong>'
                         )
                             .css({
                                 color: '#fff',
@@ -39,7 +39,7 @@ Highcharts.chart('container-genz', {
 
                 const x = series.center[0] + chart.plotLeft,
                     y = series.center[1] + chart.plotTop -
-                    (customLabel.attr('height') / 2);
+                        (customLabel.attr('height') / 2);
 
                 customLabel.attr({
                     x,
@@ -77,10 +77,10 @@ Highcharts.chart('container-genz', {
             borderColor: 'transparent',
             dataLabels: {
                 style: {
-                    color: "white",//color nama
+                    //color: "white",//color nama
                     borderColor: '#fafafa',
-                    font: 'normal 16px "Zain", sans-serif',
-                    fontWeight:'normal',
+                    font: 'normal 1.5rem "Zain", sans-serif',
+                    fontWeight: 'normal',
                     textOutline: false
                     // lineHeight: '2rem'
                 },
@@ -92,7 +92,7 @@ Highcharts.chart('container-genz', {
             borderRadius: 0,
             dataLabels: [{
                 enabled: true,
-                distance: 10,
+                distance: 20,
                 format: '{point.name}'
             }, {
                 enabled: true,
