@@ -8,15 +8,19 @@ Highcharts.chart('container-gabut', {
         text: null
     },
     tooltip: {
-        valueSuffix: '',
+        // valueSuffix: '',
+        pointFormat: '<span style="font-weight:bold">{point.y} ({point.percentage:.0f}%)</span>',
         style: {
-            //fontWeight: 'bold',
+            // fontWeight: 'bold',
             fontFamily: 'Zain',
             fontSize: '1.2rem'
         }
     },
     subtitle: {
         text: null
+    },
+    credits: {
+        enabled: false //buat highcharts com
     },
     plotOptions: {
         series: {
