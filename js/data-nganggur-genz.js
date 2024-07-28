@@ -82,7 +82,7 @@ Highcharts.chart('container-genz', {
             borderColor: 'transparent',
             dataLabels: {
                 style: {
-                    //color: "white",//color nama
+                    color: "white",//color nama
                     borderColor: '#fafafa',
                     font: 'normal 1.5rem "Zain", sans-serif',
                     fontWeight: 'normal',
