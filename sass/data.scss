@@ -117,12 +117,14 @@
     color: black !important;
     .font-12 {
         font-size: 1.5rem;
+        line-height: 1.5rem;
         @media screen and (max-width: 768px) {
             font-size: 1.3rem;
+            line-height: 1.3rem;
         }
     }
     p {
-        color: rgb(19, 19, 19) !important;
+        color: #3f3f3f !important;
     }
 
     .font-bold {
