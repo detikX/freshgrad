@@ -14,29 +14,66 @@ Highcharts.chart('container-terserap', {
     subtitle: {
         text:
             'Sumber: Indikator Pasar Tenaga Kerja Indonesia 2024',
-        align: 'left'
+        align: 'left',
+        style: {
+            color: "#4a4a4a",
+            font: 'normal 13px "Source Code Pro", sans-serif',
+            // lineHeight: '2rem'
+        }
     },
     xAxis: {
         categories: ['15-24 tahun', '> 25 tahun'],
         crosshair: true,
         accessibility: {
             description: 'Usia'
-        }
+        },
+        labels: {
+            // text: null,
+            style: {
+                // color: "#fafafa",
+                font: '18px "Zain", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+        },
     },
     yAxis: {
         min: 0,
         title: {
-            text: '1000 metric tons (MT)'
+            text: null
         }
     },
     tooltip: {
-        valueSuffix: ' (1000 MT)'
+        valueSuffix: '',
+        style: {
+            //fontWeight: 'bold',
+            fontFamily: 'Zain',
+            fontSize: '1.2rem'
+        }
     },
     plotOptions: {
         column: {
             pointPadding: 0.2,
-            borderWidth: 0
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                style: {
+                    // color: "#fafafa",
+                    font: 'normal 1.5rem "Zain", sans-serif',
+                    // lineHeight: '2rem'
+                    fontWeight: 'normal',
+                    textOutline: false
+                },
+            },
         }
+    },
+    legend: {
+        itemStyle: {
+            font: 'normal 1.3rem Zain',
+            // color: '#A0A0A0'
+        },
+
+
     },
     series: [{
         name: 'Februari 2023',
