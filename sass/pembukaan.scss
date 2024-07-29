@@ -56,14 +56,15 @@
     .bawahx {
         position: absolute;
         bottom: -16%;
-        right: 0;
+        right: -8%;
         width: fit-content;
         z-index: 4;
         filter: drop-shadow(2px 0px 6px black);
         height: 80vh;
         @media screen and (max-width: 768px) {
             width: 65%;
-            bottom: 0%;
+            right: 0;
+            bottom: -4%;
             filter: drop-shadow(2px 0px 6px black);
             height: fit-content;
         }
