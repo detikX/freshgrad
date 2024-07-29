@@ -27,8 +27,13 @@ Highcharts.chart('container-terserap', {
         accessibility: {
             description: 'Usia'
         },
+
         labels: {
             // text: null,
+            // formatter: function () {
+            //     // var a = this.y.toString().replace('.', ',');
+            //     // return a + '%';
+            // },
             style: {
                 // color: "#fafafa",
                 font: '18px "Zain", sans-serif',
@@ -39,12 +44,27 @@ Highcharts.chart('container-terserap', {
     },
     yAxis: {
         min: 0,
+        labels: {
+            // text: null,
+
+            style: {
+                // color: "#fafafa",
+                font: '18px "Zain", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+        },
         title: {
             text: null
         }
     },
     tooltip: {
         valueSuffix: '%',
+        formatter: function () {
+            var a = this.y.toString().replace('.', ',');
+            return this.series.name + ': <b>' + a + '%</b>';
+
+        },
         style: {
             //fontWeight: 'bold',
             fontFamily: 'Zain',
@@ -57,6 +77,11 @@ Highcharts.chart('container-terserap', {
             borderWidth: 0,
             dataLabels: {
                 enabled: true,
+                formatter: function () {
+                    var a = this.y.toString().replace('.', ',');
+                    return a + '%';
+
+                },
                 style: {
                     // color: "#fafafa",
                     font: 'normal 1.5rem "Zain", sans-serif',
