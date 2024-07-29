@@ -23,7 +23,7 @@ Highcharts.chart('container-usia-muda', {
         text: 'Sumber: BPS',
         align: 'left',
         style: {
-            // color: "#fafafa",
+            color: "#fafafa",
             font: 'normal 13px "Source Code Pro", sans-serif',
             // lineHeight: '2rem'
         }
@@ -33,6 +33,7 @@ Highcharts.chart('container-usia-muda', {
         title: {
             text: null
         },
+
         labels: {
             // text: null,
             style: {
@@ -42,7 +43,7 @@ Highcharts.chart('container-usia-muda', {
                 textOutline: false
             }
         },
-        gridLineWidth: 1,
+        gridLineWidth: .7,
         lineWidth: 0
     },
     yAxis: {
@@ -64,8 +65,13 @@ Highcharts.chart('container-usia-muda', {
         // valueSuffix: '%',
         // value: '{point.name} tahun'
         formatter: function () {
-            return 'Usia: ' + this.series.name + ' tahun<br>Pada tahun <b>' + this.x +
+            return 'Usia: ' + this.series.name + ' tahun<br>Pengangguran di <b>' + this.x +
                 '</b> adalah <b>' + this.y + '%</b>';
+        },
+        style: {
+            // fontWeight: 'bold',
+            fontFamily: 'Zain',
+            fontSize: '1.2rem'
         }
     },
     plotOptions: {
@@ -91,14 +97,18 @@ Highcharts.chart('container-usia-muda', {
     legend: {
         layout: 'vertical',
         align: 'right',
-        verticalAlign: 'middle',
-        x: -40,
-        y: 80,
+        verticalAlign: 'bottom',
+        x: -10,
+        y: 10,
         floating: true,
         borderWidth: 1,
+        itemStyle: {
+            font: 'normal .9rem Zain',
+            // color: '#A0A0A0'
+        },
         backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
-        shadow: true
+            Highcharts.defaultOptions.legend.backgroundColor || 'rgba(255,255,255,.7)',
+        shadow: false
     },
     credits: {
         enabled: false //buat highcharts com
