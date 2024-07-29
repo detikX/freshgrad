@@ -13,8 +13,7 @@ Highcharts.chart('container-terserap', {
     },
     subtitle: {
         text:
-            'Source: <a target="_blank" ' +
-            'href="https://www.indexmundi.com/agriculture/?commodity=corn">indexmundi</a>',
+            'Sumber: Indikator Pasar Tenaga Kerja Indonesia 2024',
         align: 'left'
     },
     xAxis: {
