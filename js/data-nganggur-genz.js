@@ -84,7 +84,7 @@ Highcharts.chart('container-genz', {
                 style: {
                     color: "white",//color nama
                     borderColor: '#fafafa',
-                    font: 'normal 1.5rem "Zain", sans-serif',
+                    font: 'normal 1.3rem "Zain", sans-serif',
                     fontWeight: 'normal',
                     textOutline: false
                     // lineHeight: '2rem'

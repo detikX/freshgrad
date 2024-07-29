@@ -2,7 +2,7 @@ Highcharts.chart('container-gabut', {
     chart: {
         type: 'pie',
         backgroundColor: 'rgba(255,255,255,0)',
-        borderRadius: 16,
+        borderRadius: 0,
     },
     title: {
         text: null
