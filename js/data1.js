@@ -1,7 +1,7 @@
 Highcharts.chart('container-terserap', {
     chart: {
         type: 'column',
-        backgroundColor: 'rgba(255,255,255,.8)',
+        backgroundColor: 'rgba(255,255,255,.6)',
         borderRadius: 16
     },
     credits: {
