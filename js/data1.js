@@ -1,111 +1,52 @@
-Highcharts.setOptions({
-    lang: {
-        thousandsSep: '.'
-    }
-})
-Highcharts.chart('container', {
+Highcharts.chart('container-terserap', {
     chart: {
-        type: 'bar',
-        backgroundColor: 'rgba(255,255,255,.9)',
-        borderRadius: 16,
-    },
-    title: {
-        text: null,
-        align: 'left',
-        style: {
-            // color: "#fafafa",
-            font: 'bold 2rem "Zain", sans-serif',
-
-            lineHeight: '4rem'
-        }
-    },
-    subtitle: {
-        text: 'Sumber: Sakernas Februari 2024',
-        align: 'left',
-        style: {
-            // color: "#fafafa",
-            font: 'normal 13px "Source Code Pro", sans-serif',
-            // lineHeight: '2rem'
-        }
-    },
-    xAxis: {
-        categories: ['Africa', 'America', 'Asia', 'Europe'],
-        title: {
-            text: null
-        },
-        labels: {
-            // text: null,
-            style: {
-                // color: "#fafafa",
-                font: '18px "Zain", sans-serif',
-                // lineHeight: '2rem'
-                textOutline: false
-            }
-        },
-        gridLineWidth: 1,
-        lineWidth: 0
-    },
-    yAxis: {
-        min: 0,
-        // title: {
-        //     text: 'Population (millions)',
-        //     align: 'high'
-        // },
-        labels: {
-            overflow: 'justify',
-            enabled: false
-        },
-        title: {
-            text: null
-        },
-        gridLineWidth: 0
-    },
-    tooltip: {
-        valueSuffix: ' millions'
-    },
-    plotOptions: {
-        // series: {
-        //     stacking: 'normal',
-        // },
-        bar: {
-            borderRadius: '50%',
-            borderColor: 'transparent',
-            dataLabels: {
-                enabled: true,
-                style: {
-                    // color: "#fafafa",
-                    font: 'normal 18px "Zain", sans-serif',
-                    // lineHeight: '2rem'
-                    fontWeight: 'normal',
-                    textOutline: false
-                },
-            },
-            groupPadding: 0.1
-        }
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'top',
-        x: -40,
-        y: 80,
-        floating: true,
-        borderWidth: 1,
-        backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
-        shadow: true
+        type: 'column',
+        backgroundColor: 'rgba(255,255,255,.8)',
+        borderRadius: 16
     },
     credits: {
         enabled: false //buat highcharts com
     },
+    title: {
+        text: null,
+        align: 'left'
+    },
+    subtitle: {
+        text:
+            'Source: <a target="_blank" ' +
+            'href="https://www.indexmundi.com/agriculture/?commodity=corn">indexmundi</a>',
+        align: 'left'
+    },
+    xAxis: {
+        categories: ['15-24 tahun', '> 25 tahun'],
+        crosshair: true,
+        accessibility: {
+            description: 'Usia'
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '1000 metric tons (MT)'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' (1000 MT)'
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
     series: [{
-        name: 'Year 1990',
-        data: [1034119]
+        name: 'Februari 2023',
+        data: [40.08, 72.31]
     }, {
-        name: 'Year 2000',
-        data: [814, 841, 3714, 726]
+        name: 'Agustus 2023',
+        data: [40.21, 72.55]
     }, {
-        name: 'Year 2021',
-        data: [1393, 1031, 4695, 745]
+        name: 'Februari 2024',
+        data: [41.49, 72.97]
     }]
 });
