@@ -6,7 +6,7 @@ Highcharts.setOptions({
 Highcharts.chart('container-usia-muda', {
     chart: {
         type: 'bar',
-        backgroundColor: 'rgba(255,255,255,.2)',
+        backgroundColor: 'rgba(255,255,255,.6)',
         borderRadius: 16,
     },
     title: {
@@ -23,7 +23,7 @@ Highcharts.chart('container-usia-muda', {
         text: 'Sumber: BPS',
         align: 'left',
         style: {
-            color: "#fafafa",
+            color: "#4a4a4a",
             font: 'normal 13px "Source Code Pro", sans-serif',
             // lineHeight: '2rem'
         }
