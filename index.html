@@ -217,7 +217,12 @@
                                 <img src="img/data-freshgrad-06.png" alt="">
                             </div>
                             <h3 class="title laptop">Faktor Gen Z dan Lulusan Baru Susah Bekerja</h3>
-                            <button class="btn-click btn btn-primary">Lihat Selengkapnya</button>
+                            <button
+                                class="btn-click btn btn-primary"
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#demoModal"
+                            >Lihat Selengkapnya</button>
                         </div>
                     </div>
                 </section>
@@ -253,6 +258,62 @@
                     </div>
                 </section>
             </main>
+            <div
+                class="modal fade auto-off"
+                id="demoModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="demoModal"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog animated zoomInDown modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="container-fluid">
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="row">
+                                <div class="col-md-12 m-h-20 bg-img rounded-left"></div>
+                                <div class="col-md-12  py-5 px-sm-5 ">
+                                    <h2>Animated Modal using animate.css</h2>
+                                    <ul>
+                                        <li>
+                                            Penciptaan lapangan kerja formal menurun, 150-200 ribu per 1% pertumbuhan ekonomi.
+                                        </li>
+                                        <li>
+                                            Syarat penerimaan kerja semakin ketat.
+                                        </li>
+                                        <li>
+                                            <i>Mismatch</i>
+                                            suplai dan permintaan keterampilan. Perusahaan lebih memilih memperpanjang masa kerja pekerja yang hendak pensiun ketimbang membiayai pelatihan tenaga kerja baru.
+                                        </li>
+                                        <li>
+                                            Mereka yang tidak sekolah atau putus sekolah, 21 dari 100 Gen Z usia 16-18 tahun tidak bersekolah pada 2021.
+                                        </li>
+                                        <li>Ekspektasi gaji tamatan Diploma dan S1 lebih tinggi</li>
+                                    </ul>
+                                    <small>
+                                        Sumber: Diolah dari Berbagai Sumber
+                                    </small>
+                                    <form>
+                                        <button
+                                            type="submit"
+                                            class="btn btn-cstm-dark btn-block btn-cta"
+                                            data-dismiss="modal"
+                                            aria-label="Close"
+                                        >close modal</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <script src="js/jquery-3.5.1.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
             <script src="https://code.highcharts.com/highcharts.js"></script>
