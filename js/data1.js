@@ -44,7 +44,7 @@ Highcharts.chart('container-terserap', {
         }
     },
     tooltip: {
-        valueSuffix: '',
+        valueSuffix: '%',
         style: {
             //fontWeight: 'bold',
             fontFamily: 'Zain',

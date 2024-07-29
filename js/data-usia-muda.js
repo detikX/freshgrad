@@ -65,8 +65,8 @@ Highcharts.chart('container-usia-muda', {
         // valueSuffix: '%',
         // value: '{point.name} tahun'
         formatter: function () {
-            return 'Usia: ' + this.series.name + ' tahun<br>Pengangguran di <b>' + this.x +
-                '</b> adalah <b>' + this.y + '%</b>';
+            return 'Usia: ' + this.series.name + ' tahun<br>Pengangguran di tahun <b>' + this.x +
+                '</b><br> mencapai <b>' + this.y + '%</b>';
         },
         style: {
             // fontWeight: 'bold',
