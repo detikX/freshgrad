@@ -1,5 +1,16 @@
 .teropong {
     background: #1c7b9d;
+    padding: 8px;
+    min-height: auto;
+    .lala {
+        position: absolute;
+        left: 50%;
+        top: 43%;
+        transform: translate(-50%, -50%);
+        @media screen and (max-width: 768px) {
+            top: 50%;
+        }
+    }
     .contentx {
         // margin: 72px auto 0 !important;
         // top: 50%;
