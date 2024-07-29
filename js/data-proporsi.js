@@ -1,15 +1,20 @@
 // Data retrieved https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature
 Highcharts.chart('container-proporsi', {
     chart: {
-        type: 'spline'
+        type: 'spline',
+        backgroundColor: 'rgba(255,255,255,.6)',
+        borderRadius: 16
     },
     title: {
-        text: 'Monthly Average Temperature'
+        text: null
     },
     subtitle: {
-        text: 'Source: ' +
-            '<a href="https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature" ' +
-            'target="_blank">Wikipedia.com</a>'
+        text: 'Sumber: BPS',
+        style: {
+            color: "#4a4a4a",
+            font: 'normal 13px "Source Code Pro", sans-serif',
+            // lineHeight: '2rem'
+        }
     },
     xAxis: {
         categories: [
@@ -17,7 +22,20 @@ Highcharts.chart('container-proporsi', {
         ],
         accessibility: {
             description: 'Months of the year'
-        }
+        },
+        labels: {
+            // text: null,
+            // formatter: function () {
+            //     // var a = this.y.toString().replace('.', ',');
+            //     // return a + '%';
+            // },
+            style: {
+                // color: "#fafafa",
+                font: '18px "Zain", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+        },
     },
     yAxis: {
         title: {
@@ -31,6 +49,11 @@ Highcharts.chart('container-proporsi', {
         crosshairs: true,
         shared: true,
         valueSuffix: '%',
+        // formatter: function () {
+        //     var a = this.y.toString().replace('.', ',');
+        //     return this.series.name + ': <b>' + a + '%</b>';
+
+        // },
     },
     plotOptions: {
         spline: {
@@ -38,7 +61,17 @@ Highcharts.chart('container-proporsi', {
                 radius: 4,
                 lineColor: '#666666',
                 lineWidth: 1
+            },
+            dataLabels: {
+                style: {
+                    // color: "#fafafa",
+                    font: 'normal 1.5rem "Zain", sans-serif',
+                    // lineHeight: '2rem'
+                    fontWeight: 'normal',
+                    textOutline: false
+                },
             }
+
         }
     },
     series: [{
