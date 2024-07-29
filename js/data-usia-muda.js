@@ -29,7 +29,7 @@ Highcharts.chart('container-usia-muda', {
         }
     },
     xAxis: {
-        categories: ['2021', '2022', '2023'],
+        categories: ['15-19 tahun', '20-24 tahun', '25-29 tahun', '30-34 tahun', '35-39 tahun', '40-44 tahun', '45-49 tahun', '50-54 tahun', '55-59 tahun', '> 60 tahun'],
         title: {
             text: null
         },
@@ -83,9 +83,13 @@ Highcharts.chart('container-usia-muda', {
             borderColor: 'transparent',
             dataLabels: {
                 enabled: true,
+                formatter: function () {
+                    // var pcnt = (data[this.x].y / dataSum) * 100;
+                    return '<span>' + this.y + ' %' + '</span>';
+                },
                 style: {
                     // color: "#fafafa",
-                    font: 'normal 18px "Zain", sans-serif',
+                    font: 'normal 1.5rem "Zain", sans-serif',
                     // lineHeight: '2rem'
                     fontWeight: 'normal',
                     textOutline: false
@@ -114,34 +118,13 @@ Highcharts.chart('container-usia-muda', {
         enabled: false //buat highcharts com
     },
     series: [{
-        name: '15-19',
-        data: [23.91, 29.08, 25.77]
+        name: '2021',
+        data: [23.91, 17.73, 9.26, 5.43, 4.02, 3.42, 3.30, 2.18, 1.98, 2.73]
     }, {
-        name: '20-24',
-        data: [17.73, 17.02, 16.85]
+        name: '2022',
+        data: [29.08, 17.02, 7.13, 3.70, 2.65, 2.43, 2.33, 2.38, 2.37, 2.85]
     }, {
-        name: '25-29',
-        data: [9.26, 7.13, 7.48]
-    }, {
-        name: '30-34',
-        data: [5.43, 3.70, 3.55]
-    }, {
-        name: '35-39',
-        data: [4.02, 2.65, 2.54]
-    }, {
-        name: '40-44',
-        data: [3.42, 2.43, 1.82]
-    }, {
-        name: '45-49',
-        data: [3.30, 2.33, 1.80]
-    }, {
-        name: '50-54',
-        data: [2.18, 2.38, 1.79]
-    }, {
-        name: '55-59',
-        data: [1.98, 2.37, 1.52]
-    }, {
-        name: '> 60',
-        data: [2.73, 2.85, 1.28]
+        name: '2023',
+        data: [25.77, 16.85, 7.48, 3.55, 2.54, 1.82, 1.80, 1.79, 1.52, 1.28]
     }]
 });

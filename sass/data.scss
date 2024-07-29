@@ -45,6 +45,10 @@
             z-index: 8;
             color: #535e78;
             transform: translate(-50%, -50%);
+            @media screen and (max-width: 768px) {
+                font-size: 1.2rem !important;
+                top: 8%;
+            }
         }
         .image {
             width: 100%;
@@ -113,8 +117,8 @@
         transform: translate(-50%, -50%) rotate(6deg);
         @media screen and (max-width: 768px) {
             width: 55%;
-            top: 40%;
-            left: 60%;
+            top: -10%;
+            left: 76%;
         }
     }
     @keyframes MoveUpDown {
@@ -226,6 +230,7 @@
             animation: MoveUpDown2 2.5s linear infinite;
             transform: translate(-50%, -100%) rotate(180deg);
             height: 50px;
+            top: 35%;
         }
         img {
             width: 100%;
@@ -362,5 +367,11 @@
 
     .font-bold {
         font-weight: bold;
+    }
+}
+
+.helpo-100 {
+    @media screen and (max-width: 768px) {
+        width: 100%;
     }
 }
