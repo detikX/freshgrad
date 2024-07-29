@@ -5,6 +5,15 @@
 
 .data {
     background: #1c7b9d;
+    .imagex {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     &.tambah-kotak {
         &::before {
             content: "";
