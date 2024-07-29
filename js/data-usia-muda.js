@@ -29,9 +29,9 @@ Highcharts.chart('container-usia-muda', {
         }
     },
     xAxis: {
-        categories: ['15-19 tahun', '20-24 tahun', '25-29 tahun', '30-34 tahun', '35-39 tahun', '40-44 tahun', '45-49 tahun', '50-54 tahun', '55-59 tahun', '> 60 tahun'],
+        categories: ['15-19 ', '20-24 ', '25-29 ', '30-34 ', '35-39 ', '40-44 ', '45-49 ', '50-54 ', '55-59 ', '> 60 '],
         title: {
-            text: null
+            text: 'Tahun'
         },
 
         labels: {
@@ -65,7 +65,7 @@ Highcharts.chart('container-usia-muda', {
         // valueSuffix: '%',
         // value: '{point.name} tahun'
         formatter: function () {
-            return 'Usia: ' + this.series.name + ' tahun<br>Pengangguran di tahun <b>' + this.x +
+            return 'Usia: ' + this.x + ' tahun<br>Pengangguran di tahun <b>' + this.series.name +
                 '</b><br> mencapai <b>' + this.y + '%</b>';
         },
         style: {
