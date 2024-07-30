@@ -51,7 +51,7 @@ Highcharts.chart('container-proporsi', {
         valueSuffix: '%',
         formatter: function () {
             var a = this.y.toString().replace('.', ',');
-            return 'Tahun <b>' + this.x + '</b> <br>' + this.series.name + ': <b>' + a + ' juta</b>';
+            return 'Tahun <b>' + this.x + '</b> <br>' + this.series.name + ': <b>' + a + ' juta orang</b>';
 
         },
         style: {
@@ -101,7 +101,7 @@ Highcharts.chart('container-proporsi', {
 
         // 2023: 83,34
 
-        // 2024: 84,13 juta orang
+        // 2024: 84,13 juta orang orang
         name: 'Pekerja Formal',
         data: [47.49, 50.83, 50.33, 51.87, 53.87, 56.04, 57.79, 52.92, 54.28, 55.29, 58.05]
     }, {
