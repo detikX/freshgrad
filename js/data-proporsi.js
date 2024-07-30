@@ -45,6 +45,9 @@ Highcharts.chart('container-proporsi', {
             format: null
         }
     },
+    credits: {
+        enabled: false //buat highcharts com
+    },
     tooltip: {
         // crosshairs: true,
         shared: false,
