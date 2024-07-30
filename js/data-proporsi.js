@@ -1,7 +1,7 @@
 // Data retrieved https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature
 Highcharts.chart('container-proporsi', {
     chart: {
-        type: 'spline',
+        type: 'line',
         backgroundColor: 'rgba(255,255,255,.6)',
         borderRadius: 16
     },
@@ -46,14 +46,15 @@ Highcharts.chart('container-proporsi', {
         }
     },
     tooltip: {
-        crosshairs: true,
-        shared: true,
+        // crosshairs: true,
+        shared: false,
         valueSuffix: '%',
-        // formatter: function () {
-        //     var a = this.y.toString().replace('.', ',');
-        //     return this.series.name + ': <b>' + a + '%</b>';
+        formatter: function () {
+            var a = this.y.toString().replace('.', ',');
+            return 'Tahun <b>' + this.x + '</b> <br>' + this.series.name + ': <b>' + a + '%</b>';
 
-        // },
+        },
+        // pointFormat: '{series.name}: <b>{point.y}</b><br/>',
     },
     plotOptions: {
         spline: {
