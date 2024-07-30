@@ -438,7 +438,7 @@
 
 .modal {
     &-content {
-        background: linear-gradient(to top, #ffe19f, #f4aa5b);
+        background: linear-gradient(to top, #ffe19f 64%, #f4aa5b 45%);
         @media screen and (max-width: 768px) {
             background: linear-gradient(to top, #ffe19f 70%, #f4aa5b 46%);
         }
