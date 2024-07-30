@@ -1,30 +1,55 @@
-let container = document.querySelector(".containerx");
-let maskContainer = document.querySelector(".mask-container");
-let maskImageContainer = document.querySelector(".mask-image-container");
+const imageComparisonSlider = document.querySelector('[data-component="image-comparison-slider"]')
 
-let border = document.querySelector(".border");
-let circle = document.querySelector(".circle");
+function setSliderstate(e, element) {
+    const sliderRange = element.querySelector('[data-image-comparison-range]');
 
-circle.style.draggable = true;
+    if (e.type === 'input') {
+        sliderRange.classList.add('image-comparison__range--active');
+        return;
+    }
 
-circle.addEventListener("touchstart", handleStart, false);
-circle.addEventListener("touchend", handleEnd, false);
-circle.addEventListener("touchcancel", handleCancel, false);
-circle.addEventListener("touchleave", handleEnd, false);
-circle.addEventListener("touchmove", handleMove, false);
-
-circle.click(function () {
-    alert(1)
-})
-
-circle.ondrag = function (event) {
-    maskContainer.style.width = event.pageX + "px";
-    border.style.left = event.pageX + "px";
-    circle.style.left = event.pageX + "px";
+    sliderRange.classList.remove('image-comparison__range--active');
+    element.removeEventListener('mousemove', moveSliderThumb);
 }
 
-circle.ondragend = function (event) {
-    maskContainer.style.width = event.pageX + "px";
-    border.style.left = event.pageX + "px";
-    circle.style.left = event.pageX + "px";
+function moveSliderThumb(e) {
+    const sliderRange = document.querySelector('[data-image-comparison-range]');
+    const thumb = document.querySelector('[data-image-comparison-thumb]');
+    let position = e.layerY - 20;
+
+    if (e.layerY <= sliderRange.offsetTop) {
+        position = -20;
+    }
+
+    if (e.layerY >= sliderRange.offsetHeight) {
+        position = sliderRange.offsetHeight - 20;
+    }
+
+    thumb.style.top = `${position}px`;
 }
+
+function moveSliderRange(e, element) {
+    const value = e.target.value;
+    const slider = element.querySelector('[data-image-comparison-slider]');
+    const imageWrapperOverlay = element.querySelector('[data-image-comparison-overlay]');
+
+    slider.style.left = `${value}%`;
+    imageWrapperOverlay.style.width = `${value}%`;
+
+    element.addEventListener('mousemove', moveSliderThumb);
+    setSliderstate(e, element);
+}
+
+function init(element) {
+    const sliderRange = element.querySelector('[data-image-comparison-range]');
+
+    if ('ontouchstart' in window === false) {
+        sliderRange.addEventListener('mouseup', e => setSliderstate(e, element));
+        sliderRange.addEventListener('mousedown', moveSliderThumb);
+    }
+
+    sliderRange.addEventListener('input', e => moveSliderRange(e, element));
+    sliderRange.addEventListener('change', e => moveSliderRange(e, element));
+}
+
+init(imageComparisonSlider);
