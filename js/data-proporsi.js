@@ -51,7 +51,7 @@ Highcharts.chart('container-proporsi', {
         valueSuffix: '%',
         formatter: function () {
             var a = this.y.toString().replace('.', ',');
-            return 'Tahun <b>' + this.x + '</b> <br>' + this.series.name + ': <b>' + a + '%</b>';
+            return 'Tahun <b>' + this.x + '</b> <br>' + this.series.name + ': <b>' + a + ' juta</b>';
 
         },
         style: {
