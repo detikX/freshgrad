@@ -62,11 +62,17 @@ Highcharts.chart('container-usia-muda', {
         gridLineWidth: 0
     },
     tooltip: {
+        // formatter: function () {
+        //     var a = this.y.toString().replace('.', ',');
+        //     return this.series.name + ': <b>' + a + '%</b>';
+
+        // },
         // valueSuffix: '%',
         // value: '{point.name} tahun'
         formatter: function () {
+            var a = this.y.toString().replace('.', ',');
             return 'Usia: ' + this.x + ' tahun<br>Pengangguran di tahun <b>' + this.series.name +
-                '</b><br> mencapai <b>' + this.y + '%</b>';
+                '</b><br> mencapai <b>' + a + '%</b>';
         },
         style: {
             // fontWeight: 'bold',
@@ -84,8 +90,9 @@ Highcharts.chart('container-usia-muda', {
             dataLabels: {
                 enabled: true,
                 formatter: function () {
+                    var a = this.y.toString().replace('.', ',');
                     // var pcnt = (data[this.x].y / dataSum) * 100;
-                    return '<span>' + this.y + ' %' + '</span>';
+                    return '<span>' + a + ' %' + '</span>';
                 },
                 style: {
                     // color: "#fafafa",
