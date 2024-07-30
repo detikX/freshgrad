@@ -54,6 +54,11 @@ Highcharts.chart('container-proporsi', {
             return 'Tahun <b>' + this.x + '</b> <br>' + this.series.name + ': <b>' + a + '%</b>';
 
         },
+        style: {
+            // fontWeight: 'bold',
+            fontFamily: 'Zain',
+            fontSize: '1.2rem'
+        }
         // pointFormat: '{series.name}: <b>{point.y}</b><br/>',
     },
     plotOptions: {
