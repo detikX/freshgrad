@@ -475,3 +475,24 @@
         line-height: 1.5rem;
     }
 }
+
+.komponen {
+    margin: 8px auto 16px;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+        text-align: left;
+    }
+    .d-inline {
+        @media screen and (max-width: 768px) {
+            display: block !important;
+        }
+    }
+    i {
+        color: #eaeaea;
+    }
+    span {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        color: #eaeaea;
+    }
+}
