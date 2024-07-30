@@ -55,12 +55,12 @@
         height: 75%;
         background: linear-gradient(to right, #10607d 46%, #15576f 44%);
         @media screen and (max-width: 768px) {
-            height: 62%;
+            height: 75%;
         }
     }
     @media screen and (max-width: 768px) {
         background: linear-gradient(to top, #1c7b9d 30%, rgba(#1c7b9d, 0.8), #1c7b9d);
-        min-height: 90vh;
+        min-height: 75vh;
     }
 
     .container_mouse {
@@ -72,6 +72,10 @@
         // text-transform: uppercase;
         padding-top: 2rem;
         cursor: pointer;
+        @media screen and (max-width: 768px) {
+            padding-top: 0;
+            top: -60px;
+        }
     }
 
     .container_mouse .mouse-btn {
