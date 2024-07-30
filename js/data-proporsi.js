@@ -50,7 +50,7 @@ Highcharts.chart('container-proporsi', {
     },
     tooltip: {
         // crosshairs: true,
-        shared: false,
+        // shared: true,
         valueSuffix: '%',
         formatter: function () {
             var a = this.y.toString().replace('.', ',');
