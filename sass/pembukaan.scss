@@ -10,7 +10,9 @@
 .pembukaan {
     background: #1c7b9d;
     // padding: 32px 0 50vh;
-
+    @media screen and (max-width: 768px) {
+        z-index: 10;
+    }
     .bayangan {
         position: absolute;
         right: -8%;
