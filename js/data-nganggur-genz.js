@@ -7,7 +7,7 @@ Highcharts.chart('container-genz', {
     chart: {
         type: 'pie',
         custom: {},
-        backgroundColor: 'rgba(255,255,255,0)',
+        backgroundColor: 'transparent',
         borderRadius: 16,
         events: {
             render() {
@@ -82,7 +82,7 @@ Highcharts.chart('container-genz', {
             borderColor: 'transparent',
             dataLabels: {
                 style: {
-                    color: "white",//color nama
+                    color: "transparent",//color nama
                     borderColor: '#fafafa',
                     font: 'normal 1.3rem "Zain", sans-serif',
                     fontWeight: 'normal',
@@ -105,7 +105,7 @@ Highcharts.chart('container-genz', {
                 format: '{point.y:,.0f}',
                 style: {
                     fontSize: '0.9em',
-                    color: "#fafafa"
+                    color: "transparent"
                 }
             }],
             showInLegend: false
